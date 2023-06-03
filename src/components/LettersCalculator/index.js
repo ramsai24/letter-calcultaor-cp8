@@ -17,15 +17,18 @@ class LettersCalculator extends Component {
       <div className="app-container">
         <div className="bg-container">
           <div className="count-container">
-            <h1 className="heading">Calculate the Letter you enter</h1>
-            <p className="description">Enter the phrase</p>
+            <h1 className="heading">Calculate the Letters you enter</h1>
+            <label htmlFor="inputel" className="description">
+              Enter the phrase
+            </label>
             <input
+              id="inputel"
               className="inputEl"
               type="text"
               onChange={this.onEnterPhrase}
               placeholder="Enter the phrase"
             />
-            <p className="letter-count">No.of letters:{letterCount}</p>
+            <p className="letter-count">No.of letters: {letterCount}</p>
           </div>
           <img
             src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
